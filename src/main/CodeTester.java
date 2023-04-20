@@ -22,9 +22,11 @@ public class CodeTester {
         taskThree.progress(30);
         taskTwo.complete();
 
-        TasksList list = new TasksList(taskOne, taskTwo,taskThree);
+        Task [] list = {taskOne, taskTwo, taskThree};
 
-        list.priority();
+        TasksList taskslist = new TasksList(list);
+
+        taskslist.priority();
     }
 
 }
