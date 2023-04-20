@@ -6,6 +6,11 @@ public class CodeTester {
         Task taskTwo = new Task("Pack up clothes", "high","20-04-2023",5);
         taskOne.complete();
         taskTwo.progress(0);
+        System.out.println(taskTwo);
+
+        TasksList list = new TasksList(taskTwo,taskOne);
+
+        list.priority();
 
     }
 
