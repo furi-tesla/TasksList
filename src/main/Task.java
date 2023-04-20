@@ -67,9 +67,11 @@ public class Task {
         int tempValue = this.progressPct + progressPct;
         if (progressPct > 0 && tempValue <= 100) {
             this.progressPct += progressPct;
-            System.out.printf("%n%d%% progress made on task %s! %n\u2728Great job!\u2728%n", progressPct, description);
+            System.out.printf("%n%d%% progress made on task %s! " +
+                    "%n\u2728Great job!\u2728%n", progressPct, description);
         } else {
-            System.out.printf("%n\u274c Invalid progress specified.%n\u27b3 Progress amount must not exceed 100%%.");
+            System.out.printf("%n\u274c Invalid progress specified." +
+                    "%n\u27b3 Progress amount must not exceed 100%%.");
         }
     }
     public void complete() {
