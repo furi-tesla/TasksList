@@ -18,7 +18,7 @@ public class Task {
         this.description = description;
         this.priority = priority;
 
-        System.out.printf("%n\u2610 %s%n\u2757 Priority: %s", description, priority);
+        System.out.printf("%n\u2610 %s%n\u2757 Priority: %s%n", description, priority);
     }
 
     public Task(String description, String priority, String dueBy) {
@@ -60,13 +60,14 @@ public class Task {
         } else {
             this.isCompleted = false;
         }
-        System.out.printf("%n\u2610 %s%n\u2757 Priority: %s%n\u25f7 Due by: %s%n%% Progress percent: %d%%%n\u2714 Completion status: %b%n\u2731 Overdue status: %b", description, priority, dueBy, progressPct, isCompleted, isOverdue);
+        System.out.printf("%n\u2610 %s%n\u2757 Priority: %s%n\u25f7 Due by: %s%n%% Progress percent: %d%%%n\u2714 Completion status: %b%n\u2731 Overdue status: %b%n", description, priority, dueBy, progressPct, isCompleted, isOverdue);
     }
 
     public void progress(int progressPct) {
         int tempValue = this.progressPct + progressPct;
         if (progressPct > 0 && tempValue <= 100) {
             this.progressPct += progressPct;
+            System.out.printf("%n%d%% progress made on task %s! %n\u2728Great job!\u2728%n", progressPct, description);
         } else {
             System.out.printf("%n\u274c Invalid progress specified.%n\u27b3 Progress amount must not exceed 100%%.");
         }
@@ -75,7 +76,7 @@ public class Task {
         this.isCompleted = true;
         this.progressPct = 100;
 
-        System.out.printf("%n\u2611 %s \u2794 completed!%n\u2728Great job!\u2728", description);
+        System.out.printf("%n\u2611 %s \u2794 completed!%n\u2728Great job!\u2728%n", description);
     }
 
     @Override
