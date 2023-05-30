@@ -27,6 +27,10 @@ public class CodeTester {
         TasksList taskslist = new TasksList(list);
 
         taskslist.priority();
-    }
 
+        Task one = new Task("shower");
+        Task two = new Task("brush teeth");
+
+        Task [] list2 = {one, two};
+    }
 }

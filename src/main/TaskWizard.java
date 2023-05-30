@@ -6,6 +6,7 @@ public class TaskWizard {
 
     public static void main(String[] args) {
         taskWizard();
+
     }
 
     public static void taskWizard() {

@@ -62,7 +62,15 @@ public class TasksList {
 
     }
 
-    public void progressPct() {
+//    public void progressAscending() {
+//
+//        Task [] newArray = Arrays.copyOf(list, list.length);
+//        Arrays.sort(newArray, ;
+//        for (int i = 0; i < list.length; i++) {
+//        }
+//    }
+
+    public void progressDescending(){
 
     }
 
